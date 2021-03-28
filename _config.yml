@@ -18,21 +18,31 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: Bank The Nifty
+email: bankthenifty@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Hi, Bank The Nifty is a blog based on a data analysis of Nitfy 50 closing prices for the past 20 years ranging till Feb 26 2020.
+  I have calculated percentage changes weekly, monthly, daily, friday to thursday, monday to thursday, wednesday to thursday and friday to thursday.
+  This can help us to make better option expiry calls and puts writing.
+  This is by no means an exhaustive study, so be careful if you use the results for trading
+  I blog about summaries of the study, my weekly options trading results based on the study and ideas which I plan to pursue in the coming expiry week/month
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
-
+#twitter_username: jekyllrb
+github_username: royce2892
 # Build settings
 theme: minima
+#remote_theme: mmistakes/minimal-mistakes@4.22.0
 plugins:
   - jekyll-feed
+
+---
+layout: default
+comments: true
+disqus:
+  shortname: bankthenifty
+# other options
+---
 
 # Exclude from processing.
 # The following items will not be processed, by default.
